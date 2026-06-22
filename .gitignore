@@ -1,0 +1,34 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# FAISS index (rebuildable via src/ingest.py)
+faiss_index/*
+!faiss_index/.gitkeep
+
+# Source data (large, rebuildable / re-downloadable)
+data/processed/*
+!data/processed/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Claude Code
+.claude
+
